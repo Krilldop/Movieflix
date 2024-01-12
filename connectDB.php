@@ -7,7 +7,7 @@
   @$conn = mysqli_connect($dBServername, $dBUsername, $dBPassword, $dBName);
 
   if (!$conn) {
-    header("Location: dbproblemas.php");
+    header("Location: dbproblems.php");
     die();
   }
 
