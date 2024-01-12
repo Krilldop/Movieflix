@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+:root {
+    --orange: #FF4C29;
+    --grey: #2C394B;
+    --light-grey: #334756;
+    --dark-grey: #082032;
+}
+
+body {
+    background-color: var(--dark-grey);
+    overflow-x: hidden;
+}
+
+.navbar,
+.footer {
+    background-color: var(--grey);
+    font-family: "Carter One", system-ui;
+}
+
+.pesquisar:focus {
+    border-color: var(--orange);
+    box-shadow: none;
+}
+
+.btnpesquisar,
+.btnpesquisar:hover {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.custom-toggler {
+    color: var(--orange);
+    font-size: 30px;
+}
+
+.usermenu {
+    transform: translate(-5%, -20%);
+}
+
+.searchbar{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carouselbox{
+    height: 70vh;
+}
+
+.carouselimg{
+    height: 70vh;
+    width: 100%;
+    opacity: 50%;
+    object-fit:cover;
+    object-position: auto;
+    transform: translate3d(0, 0, 1px);
+    align-self: center;
+}
+
+.carousel-caption{
+    font-weight: bold;
+    font-family: "Carter One", system-ui;
+}
+
+.carouselbtn,
+.carouselbtn:hover{
+    background-color: var(--orange);
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: "Carter One", system-ui;
+}
+
+.genrebtn,
+.genrebtn:hover{
+    background-color: var(--orange);
+    font-size: 20px;
+    font-family: "Carter One", system-ui;
+    letter-spacing: 2px;
+}
+
+.selected{
+    background-color: #922A15;
+}
+
+.genretext{
+    font-family: "Carter One", system-ui;
+    letter-spacing: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--orange);
+}
+
+@media (max-width: 768px) {
+    .usermenu {
+        right: auto !important;
+        left: 0 !important;
+        transform: translateY(-5px)
+    }
+
+    .searchbar{
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .carouselbox{
+        display: none;
+    }
+}
