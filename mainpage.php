@@ -1,3 +1,14 @@
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SO APAGAR ESTA MERDA DEPOIS QUE O BOTAO DE SAIR TIVER FEITO @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<?php
+echo "<script>alert('LOGIN/REGISTO SUCEDIDO'); window.location.href = 'login.php';</script>";
+session_start();
+session_unset();
+session_destroy();
+header("Location: index.php");
+exit();
+
+?> -->
+
 <!DOCTYPE html>
 <html lang="pt">
 
