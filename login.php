@@ -1,3 +1,11 @@
+<?php
+  session_start();
+
+  if(isset($_SESSION["idutilizador"])) {
+    header("Location: mainpage.php");
+  }
+  else {
+?>
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -26,20 +34,20 @@
               <p class="col-lg-10 fs-4 text-white">Onde o tempo passa a correr!</p>
             </div>
             <div class="col-md-10 mx-auto col-lg-5">
-              <form action="mainpage.php" class="formlogin p-4 p-md-5 rounded-3">
+              <form method="post" action="functions.php" class="formlogin p-4 p-md-5 rounded-3">
                 <div class="formicon form-floating mb-3">
                   <i class="loginicon fa-solid fa-circle-user" alt="Login"></i>
                 </div>
                 <hr class="my-4" style="color: #FF4C29;">
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control">
+                  <input type="email" class="form-control" name="email">
                   <label>Email</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="password" class="form-control">
+                  <input type="password" class="form-control" name="password">
                   <label>Password</label>
                 </div>
-                <button class="btnlogin w-100 btn btn-lg" type="submit">Entrar</button>
+                <button class="btnlogin w-100 btn btn-lg" type="submit" name="login">Entrar</button>
               </form>
             </div>
           </div>
@@ -57,3 +65,7 @@
 </body>
 
 </html>
+
+<?php
+  }
+?>
