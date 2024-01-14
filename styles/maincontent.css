@@ -84,9 +84,18 @@ body {
     background-color: #922A15;
 }
 
-.genretext{
-    font-family: "Carter One", system-ui;
-    letter-spacing: 3px;
+.moviecover{
+    height: 27vh;
+    width: 20vh;
+    border-radius: 10px;
+}
+
+.movietitle{
+    font-size: 1.3vw;  
+}
+
+.customcell{
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -104,6 +113,24 @@ body {
     background-color: var(--orange);
 }
 
+@media (max-width: 1200px) {
+    .movietitle{
+        font-size: 1.8vw;  
+    }
+}
+
+@media (max-width: 1100px) {
+    .movietitle{
+        font-size: 2vw;  
+    }
+}
+
+@media (max-width: 930px) {
+    .movietitle{
+        font-size: 2.5vw;  
+    }
+}
+
 @media (max-width: 768px) {
     .usermenu {
         right: auto !important;
@@ -114,10 +141,36 @@ body {
     .searchbar{
         width: 90%;
     }
+
+    .movietitle{
+        font-size: 3vw;  
+    }
+}
+
+@media (max-width: 680px) {
+    .movietitle{
+        font-size: 3.2vw;  
+    }
+}
+
+@media (max-width: 600px) {
+    .movietitle{
+        font-size: 3.7vw;  
+    }
 }
 
 @media (max-width: 500px) {
     .carouselbox{
         display: none;
+    }
+
+    .movietitle{
+        font-size: 4vw;  
+    }
+}
+
+@media (max-width: 430px) {
+    .movietitle{
+        font-size: 5vw;  
     }
 }
