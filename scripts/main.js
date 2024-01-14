@@ -24,3 +24,9 @@ function filterMovies(button) {
     }
   });
 }
+
+function replaceEmptySrc(image) {
+  if (image.getAttribute('src') === '') {
+     image.src = 'assets/undraw_avatar.svg';
+  }
+}

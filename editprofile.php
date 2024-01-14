@@ -14,21 +14,6 @@
 <body class="d-flex flex-column min-vh-100">
   <?php include_once "navbar_postlogin.php" ?>
 
-  <div class="container m-auto">
-    <form action="functions.php" method="post">
-
-      <div class="d-flex justify-content-center align-items-center">
-
-        <div class="profile p-3 text-center">
-          <img class="profilepic img-fluid rounded-circle" src="assets/users/user_1.jpeg" alt="" onloadstart="replaceEmptySrc(this)">
-          <h3 class="display-5 text-white">Username</h3>
-          <h5 class="display-8 text-white">example@example.com</h5>
-          <a class="editprofilebtn btn fw-bold text-white mt-2" href="editprofile.php">Editar Perfil</a>
-        </div>
-      </div>
-    </form>
-  </div>
-
   <?php include_once "footer.php" ?>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

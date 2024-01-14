@@ -7,6 +7,21 @@
     --dark-grey: #082032;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--orange);
+}
+
 body {
     background-color: var(--dark-grey);
     overflow-x: hidden;
@@ -98,20 +113,26 @@ body {
     text-decoration: none;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
+.profile{
+    width: 50vh;
+    background-color: var(--grey);
+    border-radius: 50px;
 }
 
-::-webkit-scrollbar-track {
-    border-radius: 8px;
-    background-color: #e7e7e7;
-    border: 1px solid #cacaca;
+.profilepic{
+    height: 50vh;
+    width: auto;
+    object-fit: cover;
+    object-position: auto;
+    transform: translate3d(0, 0, 1px);
 }
 
-::-webkit-scrollbar-thumb {
-    border-radius: 8px;
+.editprofilebtn,
+.editprofilebtn:hover{
     background-color: var(--orange);
+    width: 20vh;
 }
+
 
 @media (max-width: 1200px) {
     .movietitle{
