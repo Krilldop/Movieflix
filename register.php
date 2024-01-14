@@ -37,35 +37,31 @@
           </ul>
         </div>
         <div class="col-md-7 col-lg-8">
-          <h4 class="title mb-3">Criar a sua conta</h4>
-          <form method="post" action="functions.php">
-            <div class="row g-3">
-
-              <div class="col-12">
-                <label class="form-label">Utilizador</label>
-                <div class="input-group">
-                  <span class="input-group-text">@</span>
-                  <input type="text" class="form-control" name="username" required />
-                </div>
-              </div>
-
-              <div class="col-12">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" required />
-              </div>
-
-              <div class="col-12">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" name="password" required />
-              </div>
-            </div>
-
-            <button class="btncreateuser w-100 btn btn-primary btn-lg" name="register" type="submit">
-              CRIAR CONTA
-            </button>
-          </form>
+  <h4 class="title mb-3">Criar a sua conta</h4>
+  <form method="post" action="inserir.php">
+    <div class="row g-3">
+      <div class="col-12">
+        <label class="form-label">Utilizador</label>
+        <div class="input-group">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" name="utilizador" required />
         </div>
       </div>
+      <div class="col-12">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" required />
+      </div>
+      <div class="col-12">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" required />
+      </div>
+    </div>
+    <button class="btncreateuser w-100 btn btn-primary btn-lg" name="register" type="submit">
+      CRIAR CONTA
+    </button>
+  </form>
+</div>
+
     </main>
   </div>
 

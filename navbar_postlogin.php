@@ -19,18 +19,26 @@
           <a class="nav-link text-white" href="series.php">Séries</a>
         </li>
       </ul>
+    
+
+
+
 
       <div class="d-md-flex col-md-2 justify-content-md-end">
-        <a class="nav-link dropdown-toggle show text-white" data-bs-toggle="dropdown"
-          style="cursor: pointer;">Username</a>
+    <form method="post" action="functions.php">
+        <a class="nav-link dropdown-toggle show text-white" data-bs-toggle="dropdown" style="cursor: pointer;">Username</a>
         <ul class="dropdown-menu dropdown-menu-end usermenu">
-          <li><a class="dropdown-item" href="profile.php" type="button">Perfil</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="login.php" type="button">Sair</a></li>
+            <li><a class="dropdown-item" href="profile.php" type="button">Perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+                <button class="dropdown-item" type="submit" name="logout">Sair</button>
+            </li>
         </ul>
-      </div>
+    </form>
+</div>
+
+
+
     </div>
   </div>
 </nav>
