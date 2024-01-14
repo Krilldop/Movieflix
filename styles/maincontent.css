@@ -133,6 +133,16 @@ body {
     width: 20vh;
 }
 
+.editprofilecontainer{
+    width: 50vh;
+    background-color: var(--grey);
+    border-radius: 50px;
+}
+
+.userpic{
+    width: 70px;
+}
+
 
 @media (max-width: 1200px) {
     .movietitle{
