@@ -47,7 +47,7 @@
 
   <div class="container-fluid px-2">
     <div
-      class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 row-cols-xxl-7 justify-content-start text-center">
+      class="row row-cols-xs-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 row-cols-xxl-7 justify-content-start text-center">
       <div class="moviecol col d-flex justify-content-center" data-filter="action">
         <a class="customcell" href="#">
           <img class="moviecover" src="assets/covers/aquamaneoreinoperdido_1.jpg" alt="">
