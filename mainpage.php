@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -20,7 +18,8 @@
     <input type="search" class="searchbar form-control input-group-l" placeholder="Pesquisar título, género">
   </form>
 
-  <div id="carouselHighlight" class="carouselbox carousel slide my-2 mx-auto w-100" data-bs-ride="carousel" data-bs-touch="true">
+  <div id="carouselHighlight" class="carouselbox carousel slide my-2 mx-auto w-100" data-bs-ride="carousel"
+    data-bs-touch="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselHighlight" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#carouselHighlight" data-bs-slide-to="1" class=""></button>
@@ -48,7 +47,7 @@
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img class="carouselimg bd-placeholder-img w-100"  src="assets/covers/aquamaneoreinoperdido_2.jpg" alt="">
+        <img class="carouselimg bd-placeholder-img w-100" src="assets/covers/aquamaneoreinoperdido_2.jpg" alt="">
         <div class="container">
           <div class="carousel-caption">
             <h1>AQUAMAN E O REINO PERDIDO</h1>
@@ -83,6 +82,33 @@
       <span class="carousel-control-next-icon"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+  <h1 class="upcoming-releases-title text-white display-5 my-3 ms-3">Próximos Lançamentos</h1>
+  <div class="container-fluid px-2">
+    <div
+      class="row row-cols-xs-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 row-cols-xxl-7 justify-content-start text-center">
+      <div class="moviecol col d-flex justify-content-center" data-filter="action">
+        <a class="customcell" href="#">
+        <p class="text-break text-white display-6">18/02/2025</p>
+          <img class="moviecover" src="assets/covers/aquamaneoreinoperdido_1.jpg" alt="">
+          <p class="movietitle text-break text-white">Aquaman e o Reino Perdido</p>
+        </a>
+      </div>
+      <div class="moviecol col d-flex justify-content-center" data-filter="drama">
+        <a class="customcell" href="#">
+        <p class="text-break text-white display-6">18/02/2025</p>
+          <img class="moviecover" src="assets/covers/asociedadedaneve_1.jpg" alt="">
+          <p class="movietitle text-break text-white">A Sociedade da Neve</p>
+        </a>
+      </div>
+      <div class="moviecol col d-flex justify-content-center" data-filter="horror">
+        <a class="customcell" href="#">
+        <p class="text-break text-white display-6">18/02/2025</p>
+          <img class="moviecover" src="assets/covers/feriadosangrento_1.jpg" alt="">
+          <p class="movietitle text-break text-white">Feriado Sangrento</p>
+        </a>
+      </div>
+    </div>
   </div>
 
   <?php include_once "footer.php" ?>

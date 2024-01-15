@@ -87,6 +87,12 @@ body {
     font-family: "Carter One", system-ui;
 }
 
+.upcoming-releases-title{
+    font-family: "Carter One", system-ui;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
 .genrebtn,
 .genrebtn:hover {
     background-color: var(--orange);
