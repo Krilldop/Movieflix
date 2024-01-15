@@ -36,11 +36,11 @@ if (isset($_POST["login"])) {
     exit();
   }
   else if ($checkPwd === true) {*/
-    session_start();
-    $_SESSION["idutilizador"] = $emailExists["idutilizador"];
-    header("Location: mainpage.php");
-    exit();
-  }
+  session_start();
+  $_SESSION["idutilizador"] = $emailExists["idutilizador"];
+  header("Location: mainpage.php");
+  exit();
+}
 //}
 else {
   header("Location: mainpage.php");
