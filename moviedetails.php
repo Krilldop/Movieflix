@@ -57,7 +57,7 @@
             <div class="w-100 me-3">
               <h5 class="text-white fw-bold">Username</h5>
               <ul class="rating">
-                <li class="star-icon active" data-rating="1"></li>
+                <li class="star-icon" data-rating="1"></li>
                 <li class="star-icon" data-rating="2"></li>
                 <li class="star-icon" data-rating="3"></li>
                 <li class="star-icon" data-rating="4"></li>
@@ -86,7 +86,8 @@
             </div>
             <div class="w-100 me-3">
               <h5 class="text-white fw-bold">Username</h5>
-              <span class="mb-1 d-block text-white text-break">Thanks bbbootstrap.com for providing such useful snippets. </span>
+              <span class="mb-1 d-block text-white text-break">Thanks bbbootstrap.com for providing such useful
+                snippets. </span>
             </div>
           </div>
         </div>
@@ -97,7 +98,8 @@
             </div>
             <div class="w-100 me-3">
               <h5 class="text-white fw-bold">Username</h5>
-              <span class="mb-1 d-block text-white text-break">Thanks bbbootstrap.com for providing such useful snippets. </span>
+              <span class="mb-1 d-block text-white text-break">Thanks bbbootstrap.com for providing such useful
+                snippets. </span>
             </div>
           </div>
         </div>
@@ -108,6 +110,7 @@
   <?php include_once "footer.php" ?>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

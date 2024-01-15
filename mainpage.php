@@ -29,7 +29,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="5000">
-        <img class="carouselimg bd-placeholder-img w-100" src="assets/covers/JumanjiTheNextLevel_2.jpg" alt="">
+        <img class="carouselimg bd-placeholder-img w-100" src="assets/covers/jumanjithenextlevel_2.jpg" alt="">
         <div class="container">
           <div class="carousel-caption">
             <h1>JUMANJI : THE NEXT LEVEL</h1>

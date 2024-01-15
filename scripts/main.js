@@ -34,12 +34,14 @@ function replaceEmptySrc(image) {
 var stars = document.querySelectorAll('.star-icon');
                   
 document.addEventListener('click', function(e){
-  var classStar = e.target.classList;
-  if(!classStar.contains('active')){
-    stars.forEach(function(star){
-      star.classList.remove('active');
-    });
-    classStar.add('active');
-    console.log(e.target.getAttribute('data-rating'));
+  if(e.target && e.target.classList.contains('star-icon')) {
+    var classStar = e.target.classList;
+    if(!classStar.contains('active')){
+      stars.forEach(function(star){
+        star.classList.remove('active');
+      });
+      classStar.add('active');
+      console.log(e.target.getAttribute('data-rating'));
+    }
   }
 });
