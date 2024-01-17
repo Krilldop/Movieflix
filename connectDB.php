@@ -1,8 +1,8 @@
 <?php
 $dBServername = "localhost";
-$dBUsername = "root";
+$dBUsername = "id21765018_admin";
 $dBPassword = "Admin123@";
-$dBName = "movieflix";
+$dBName = "id21765018_movieflix";
 
 $conn = mysqli_connect($dBServername, $dBUsername, $dBPassword, $dBName);
 
