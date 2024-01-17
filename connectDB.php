@@ -1,27 +1,12 @@
 <?php
-  $dBServername = "localhost";
-  $dBUsername = "root";
-  $dBPassword = "";
-  $dBName = "movieflix";
+$dBServername = "localhost";
+$dBUsername = "root";
+$dBPassword = "Admin123@";
+$dBName = "movieflix";
 
-  $conn = mysqli_connect($dBServername, $dBUsername, $dBPassword, $dBName);
+$conn = mysqli_connect($dBServername, $dBUsername, $dBPassword, $dBName);
 
-  if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-} else {
-    echo "Connected successfully!";
+if (!$conn) {
+  header("Location: dbproblems.php");
+  die("Connection failed: " . mysqli_connect_error());
 }
-
-
-
-
-
-
-
-  /*
-  if (!$conn) {
-    header("Location: dbproblems.php");
-    die();
-  }
-*/
-?>

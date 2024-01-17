@@ -126,7 +126,7 @@ body {
 }
 
 .profilepic {
-    height: 50vh;
+    height: 40vh;
     width: auto;
     object-fit: cover;
     object-position: auto;
@@ -169,7 +169,6 @@ body {
 .ratingicon {
     color: #ebdb34;
     font-size: 25px;
-    margin-left: 7px;
     text-align: center;
 }
 

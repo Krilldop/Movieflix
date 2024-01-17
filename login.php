@@ -25,7 +25,6 @@
   <div class="container">
     <main>
       <div class="firstdivmargin"></div>
-
       <div class="content">
         <div class="container col-xl-10 col-xxl-8 px-4 py-5">
           <div class="row align-items-center g-lg-5 py-5">
@@ -40,11 +39,11 @@
                 </div>
                 <hr class="my-4" style="color: #FF4C29;">
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control" name="email">
+                  <input type="email" class="form-control" name="email" required>
                   <label>Email</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="password" class="form-control" name="password">
+                  <input type="password" class="form-control" name="password" required>
                   <label>Password</label>
                 </div>
                 <button class="btnlogin w-100 btn btn-lg" type="submit" name="login">Entrar</button>

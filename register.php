@@ -1,6 +1,13 @@
+<?php
+  session_start();
+
+  if(isset($_SESSION["idutilizador"])) {
+    header("Location: mainpage.php");
+  }
+  else {
+?>
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,30 +44,30 @@
           </ul>
         </div>
         <div class="col-md-7 col-lg-8">
-  <h4 class="title mb-3">Criar a sua conta</h4>
-  <form method="post" action="inserir.php">
-    <div class="row g-3">
-      <div class="col-12">
-        <label class="form-label">Utilizador</label>
-        <div class="input-group">
-          <span class="input-group-text">@</span>
-          <input type="text" class="form-control" name="utilizador" required />
+          <h4 class="title mb-3">Criar a sua conta</h4>
+          <form method="post" action="functions.php">
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="form-label">Utilizador</label>
+                <div class="input-group">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" name="utilizador" maxlength="20" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" maxlength="80" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" maxlength="30" required>
+              </div>
+            </div>
+            <button class="btncreateuser w-100 btn btn-primary btn-lg" name="register" type="submit">
+              CRIAR CONTA
+            </button>
+          </form>
         </div>
-      </div>
-      <div class="col-12">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" name="email" required />
-      </div>
-      <div class="col-12">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" name="password" required />
-      </div>
-    </div>
-    <button class="btncreateuser w-100 btn btn-primary btn-lg" name="register" type="submit">
-      CRIAR CONTA
-    </button>
-  </form>
-</div>
 
     </main>
   </div>
@@ -71,3 +78,6 @@
 </body>
 
 </html>
+<?php
+  }
+?>

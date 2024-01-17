@@ -16,8 +16,8 @@ function filterMovies(button) {
   const movieCells = document.querySelectorAll('.moviecol');
 
   movieCells.forEach(cell => {
-    const cellFilter = cell.getAttribute("data-filter");
-    if (filterValue === "all" || filterValue === cellFilter) {
+    const cellFilters = cell.getAttribute("data-filter").split(' ');
+    if (filterValue === "all" || cellFilters.includes(filterValue)) {
       cell.style.display = "";
     } else {
       cell.style.setProperty("display", "none", "important")
@@ -26,7 +26,7 @@ function filterMovies(button) {
 }
 
 function replaceEmptySrc(image) {
-  if (image.getAttribute('src') === '') {
+  if (image.getAttribute('src') === 'assets/users/.jpg') {
      image.src = 'assets/undraw_avatar.svg';
   }
 }
@@ -41,7 +41,21 @@ document.addEventListener('click', function(e){
         star.classList.remove('active');
       });
       classStar.add('active');
-      console.log(e.target.getAttribute('data-rating'));
     }
   }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var ratingInput = document.getElementById('ratingValue');
+
+  stars.forEach(function(star) {
+    star.addEventListener('click', function() {
+      stars.forEach(function(s) {
+        s.classList.remove('active');
+      });
+      this.classList.add('active');
+
+      ratingInput.value = this.getAttribute('data-value');
+    });
+  });
 });
